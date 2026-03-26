@@ -40,7 +40,7 @@ const experience = [
   },
   {
     company: "CETIN",
-    role: "Freelancer, SAP Competence Center / Basis Team",
+    role: "SAP Consultant, SAP Competence Center / Basis Team",
     period: "Oct 2017 - Apr 2021",
     bullets: [
       "Managed SAP environments including Solution Manager, Portal, Oracle, ECC, and SRM.",
@@ -81,7 +81,7 @@ const experience = [
     ]
   },
   {
-    company: "Škoda Auto",
+    company: "RWE",
     role: "SAP Basis Trainee",
     period: "Earlier role",
     bullets: [
@@ -100,7 +100,7 @@ const certifications = [
   "ITIL Foundation V3",
   "ITIL Intermediate Service Strategy",
   "ITIL Intermediate Service Transition",
-  "SAP technical and reporting training"
+  "SAP technical and reporting trainings"
 ];
 
 const interests = ["Pilates / yoga / tennis", "Travelling", "Financial markets", "Self-education"];
@@ -168,7 +168,7 @@ export default function ResumePage() {
             <article key={`${item.company}-${item.role}`} className="space-y-3">
               <div>
                 <h3 className="text-xl font-semibold tracking-tight">
-                  {"displayTitle" in item ? item.displayTitle : `${item.company} - ${item.role}`}
+                  {"displayTitle" in item ? item.displayTitle : `${item.role} - ${item.company}`}
                 </h3>
                 <p className="text-sm font-medium uppercase tracking-[0.18em] text-accent-deep">{item.period}</p>
               </div>
