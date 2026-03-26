@@ -4,8 +4,8 @@ export const siteMeta = {
   email: "trnkovaz@gmail.com",
   phone: "+420 774 888 074",
   location: "Prague, Czech Republic",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/"
+  github: "https://github.com/Zuzana111",
+  linkedin: "https://www.linkedin.com/in/zuzana-s-sami/"
 };
 
 export const socialLinks = [
