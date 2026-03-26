@@ -3,7 +3,7 @@ export const siteMeta = {
   title: "Data Analytics & Applied AI",
   email: "trnkovaz@gmail.com",
   phone: "+420 774 888 074",
-  location: "Prague, Czech republic",
+  location: "Prague, Czech Republic",
   github: "https://github.com/",
   linkedin: "https://www.linkedin.com/"
 };
