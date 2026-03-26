@@ -73,6 +73,23 @@ export const copy = {
         "The emphasis is on clear analysis, structured experimentation, and turning technical outputs into something decision-ready.",
       groups: skillGroups
     },
+    chatbot: {
+      eyebrow: "Assistant",
+      title: "Ask my portfolio assistant.",
+      description:
+        "Ask about my background, projects, skills, or contact details. This demo assistant is grounded in the content of this site.",
+      welcome:
+        "Hi, I'm Zuzana's portfolio assistant. Ask me anything about her experience, projects, resume, or how to get in touch.",
+      inputPlaceholder: "Ask a question about Zuzana...",
+      sendLabel: "Send",
+      promptLabel: "Try one of these:",
+      prompts: [
+        "What is Zuzana's background?",
+        "What projects is she working on?",
+        "What are her core skills?",
+        "How can I contact her?"
+      ]
+    },
     contactCta: {
       eyebrow: "Contact",
       title: "Open to analytics and applied AI opportunities.",
@@ -235,6 +252,23 @@ export const copy = {
           title: "Nástroje",
           items: ["Jupyter", "Git", "Streamlit", "Dashboardy"]
         }
+      ]
+    },
+    chatbot: {
+      eyebrow: "Asistent",
+      title: "Zeptejte se mého portfolio asistenta.",
+      description:
+        "Ptejte se na mé zkušenosti, projekty, dovednosti nebo kontakt. Tento demo asistent odpovídá podle obsahu tohoto webu.",
+      welcome:
+        "Ahoj, jsem portfolio asistent Zuzany. Zeptejte se na její zkušenosti, projekty, životopis nebo jak ji kontaktovat.",
+      inputPlaceholder: "Zeptejte se na Zuzanu...",
+      sendLabel: "Odeslat",
+      promptLabel: "Zkuste třeba:",
+      prompts: [
+        "Jaké má Zuzana zkušenosti?",
+        "Na jakých projektech pracuje?",
+        "Jaké jsou její hlavní dovednosti?",
+        "Jak ji mohu kontaktovat?"
       ]
     },
     contactCta: {
