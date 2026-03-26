@@ -6,7 +6,7 @@ import { siteMeta } from "@/lib/site-data";
 const coreSkills = [
   {
     label: "Languages",
-    value: "Python, SQL"
+    value: "Python, SQL, ABAP"
   },
   {
     label: "Data & ML",
@@ -28,6 +28,17 @@ const coreSkills = [
 
 const experience = [
   {
+    company: "Gavrit Consulting",
+    role: "Freelance SAP Consultant | Gavrit Consulting (Remote, project-based)",
+    displayTitle: "Freelance SAP Consultant | Gavrit Consulting (Remote, project-based)",
+    period: "May 2021 - Nov 2025",
+    bullets: [
+      "Provided SAP Basis and Security support across project-based remote engagements.",
+      "Supported enterprise SAP operations, administration, and technical coordination.",
+      "Contributed to ongoing SAP-related work while later transitioning toward data analytics and applied AI."
+    ]
+  },
+  {
     company: "CETIN",
     role: "Freelancer, SAP Competence Center / Basis Team",
     period: "Oct 2017 - Apr 2021",
@@ -44,7 +55,7 @@ const experience = [
     period: "May 2015 - Jan 2018",
     bullets: [
       "Worked on release management, cutover coordination, conflict analysis, and landscape synchronization.",
-      "Contributed to SAP security and architecture work across large international environments.",
+      "Contributed to SAP security and architecture work across large international environments, with project experience in Geneva, Stuttgart, Bratislava, and Prague.",
       "Supported design and implementation of support processes including monitoring, incident handling, and job scheduling.",
       "Participated in security guideline design for more than 35 SAP systems."
     ]
@@ -80,26 +91,19 @@ const experience = [
 ];
 
 const education = [
-  "Master's Degree, Informatics / Information Systems - Masaryk University Brno, 2011-2012",
-  "Bachelor's Degree, Applied Informatics - Masaryk University Brno, 2008-2011"
+  "Master's Degree, Informatics / Information Systems - Masaryk University Brno",
+  "Bachelor's Degree, Applied Informatics - Masaryk University Brno"
 ];
 
 const certifications = [
+  "Data science bootcamp covering Python, SQL, machine learning, ETL, NLP, dashboards, and model tuning",
   "ITIL Foundation V3",
   "ITIL Intermediate Service Strategy",
   "ITIL Intermediate Service Transition",
-  "SAP technical and reporting training",
-  "Data science bootcamp covering Python, SQL, machine learning, ETL, NLP, dashboards, and model tuning"
+  "SAP technical and reporting training"
 ];
 
-const projects = [
-  "Gap Fill Analytics Dashboard",
-  "Gap Fill Prediction Model",
-  "Trading Automation / Trading App",
-  "Bootcamp case study"
-];
-
-const interests = ["Pilates / yoga / tennis", "Travelling", "Stock trading", "Self-education"];
+const interests = ["Pilates / yoga / tennis", "Travelling", "Financial markets", "Self-education"];
 
 function ResumeSection({
   title,
@@ -125,12 +129,6 @@ export default function ResumePage() {
         <p className="mt-3 text-xl text-foreground/76">
           Data Analytics & Applied AI | Former SAP Basis &amp; Security Specialist
         </p>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-foreground/72">
-          I have 9+ years of experience in SAP Basis, Security, and enterprise support across Accenture, Škoda Auto,
-          CETIN, and freelance roles. After completing an intensive data science bootcamp, I am now building practical
-          projects in SQL, Python, machine learning, and applied AI, with a focus on analytics, decision support, and
-          automation.
-        </p>
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
           <a href="/resume.pdf" className="border-b border-accent pb-1 text-accent-deep transition hover:border-accent-deep">
             Download CV
@@ -146,10 +144,11 @@ export default function ResumePage() {
 
       <ResumeSection title="Professional Summary">
         <p>
-          I have 9+ years of experience in SAP Basis, Security, and enterprise support across Accenture, Škoda Auto,
-          CETIN, and freelance roles. After completing an intensive data science bootcamp, I am now building practical
-          projects in SQL, Python, machine learning, and applied AI, with a focus on analytics, decision support, and
-          automation.
+          Former SAP Basis and Security specialist with 10+ years of experience across enterprise environments,
+          including Accenture, Škoda Auto, CETIN, and freelance work. Currently transitioning into data analytics and
+          applied AI after completing an intensive data science bootcamp. Building practical projects in SQL, Python,
+          machine learning, and decision-support tools, with a growing focus on trading analytics and real-world AI
+          applications.
         </p>
       </ResumeSection>
 
@@ -169,7 +168,7 @@ export default function ResumePage() {
             <article key={`${item.company}-${item.role}`} className="space-y-3">
               <div>
                 <h3 className="text-xl font-semibold tracking-tight">
-                  {item.company} - {item.role}
+                  {"displayTitle" in item ? item.displayTitle : `${item.company} - ${item.role}`}
                 </h3>
                 <p className="text-sm font-medium uppercase tracking-[0.18em] text-accent-deep">{item.period}</p>
               </div>
@@ -196,14 +195,6 @@ export default function ResumePage() {
       <ResumeSection title="Certifications & Training">
         <ul className="space-y-3">
           {certifications.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </ResumeSection>
-
-      <ResumeSection title="Projects">
-        <ul className="space-y-3">
-          {projects.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
