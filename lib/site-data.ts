@@ -5,22 +5,28 @@ export const siteMeta = {
   phone: "+420 774 888 074",
   location: "Prague, Czech Republic",
   github: "https://github.com/Zuzana111",
-  linkedin: "https://www.linkedin.com/in/zuzana-s-sami/"
+  linkedin: "https://www.linkedin.com/in/zuzana-s-sami/",
+  medium: "https://medium.com/"
 };
 
 export const socialLinks = [
   { label: "GitHub", href: siteMeta.github },
   { label: "LinkedIn", href: siteMeta.linkedin },
+  { label: "Medium", href: siteMeta.medium },
   { label: "Email", href: `mailto:${siteMeta.email}` }
 ] as const;
 
 export const featuredProjects = [
   {
-    title: "Gap Fill Analytics Dashboard",
+    title: "Investment Campaign Targeting with ML",
     description:
-      "A market structure dashboard that turns trading-session behavior into readable analytics, combining clean visual summaries with decision-support metrics.",
-    stack: ["Python", "Pandas", "Plotly", "SQL"],
-    type: "Dashboard"
+      "Built a classification model to identify 3,000 banking clients most likely to invest in a second campaign round. Compared 5 models and selected Logistic Regression based on performance and interpretability.",
+    stack: ["Python", "scikit-learn", "SQL"],
+    type: "Machine Learning",
+    links: [
+      { label: "GitHub", href: siteMeta.github },
+      { label: "Article", href: siteMeta.medium }
+    ]
   },
   {
     title: "Gap Fill Prediction Model",
@@ -50,6 +56,21 @@ export const skillGroups = [
   {
     title: "Tools",
     items: ["Jupyter", "Git", "Streamlit", "Dashboards"]
+  }
+] as const;
+
+export const writingItems = [
+  {
+    title: "Article Title Placeholder",
+    description: "A future Medium article about analytics, applied AI, or practical technical learning.",
+    href: "https://medium.com/",
+    tag: "Medium"
+  },
+  {
+    title: "Another Article Placeholder",
+    description: "A placeholder entry for writing about projects, problem solving, or lessons from the transition into data work.",
+    href: "https://medium.com/",
+    tag: "Medium"
   }
 ] as const;
 

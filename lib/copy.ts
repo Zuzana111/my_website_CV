@@ -1,4 +1,4 @@
-import { featuredProjects, resumeHighlights, siteMeta, skillGroups, socialLinks } from "@/lib/site-data";
+import { featuredProjects, resumeHighlights, siteMeta, skillGroups, socialLinks, writingItems } from "@/lib/site-data";
 
 export const locales = ["en", "cs"] as const;
 
@@ -16,6 +16,7 @@ export const copy = {
       { href: "/", label: "Home" },
       { href: "/about", label: "About" },
       { href: "/projects", label: "Projects" },
+      { href: "/writing", label: "Writing" },
       { href: "/resume", label: "Resume" },
       { href: "/contact", label: "Contact" }
     ],
@@ -90,6 +91,13 @@ export const copy = {
         "How can I contact her?"
       ]
     },
+    writing: {
+      eyebrow: "Writing",
+      title: "Notes, articles, and reflections in progress.",
+      description:
+        "A space for future Medium writing on analytics, applied AI, technical problem solving, and lessons from a career transition.",
+      items: writingItems
+    },
     contactCta: {
       eyebrow: "Contact",
       title: "Open to analytics and applied AI opportunities.",
@@ -147,6 +155,12 @@ export const copy = {
         { label: "LinkedIn", value: "Connect professionally", href: siteMeta.linkedin },
         { label: "GitHub", value: "View technical work", href: siteMeta.github }
       ]
+    },
+    writingPage: {
+      eyebrow: "Writing",
+      title: "Writing and future Medium articles.",
+      description:
+        "A dedicated place for articles, notes, and reflections on analytics, applied AI, projects, and technical learning."
     }
   },
   cs: {
@@ -158,6 +172,7 @@ export const copy = {
       { href: "/", label: "Domů" },
       { href: "/about", label: "O mně" },
       { href: "/projects", label: "Projekty" },
+      { href: "/writing", label: "Psaní" },
       { href: "/resume", label: "Životopis" },
       { href: "/contact", label: "Kontakt" }
     ],
@@ -212,18 +227,22 @@ export const copy = {
       link: "Všechny projekty",
       projects: [
         {
+          title: "Investment Campaign Targeting with ML",
+          description:
+            "Built a classification model to identify 3,000 banking clients most likely to invest in a second campaign round. Compared 5 models and selected Logistic Regression based on performance and interpretability.",
+          stack: ["Python", "scikit-learn", "SQL"],
+          type: "Machine Learning",
+          links: [
+            { label: "GitHub", href: siteMeta.github },
+            { label: "Article", href: siteMeta.medium }
+          ]
+        },
+        {
           title: "Gap Fill analytický dashboard",
           description:
             "Dashboard tržní struktury, který převádí chování obchodních seancí do přehledné analytiky a kombinuje čisté vizuální souhrny s metrikami pro rozhodování.",
           stack: ["Python", "Pandas", "Plotly", "SQL"],
           type: "Dashboard"
-        },
-        {
-          title: "Predikční model gap fill",
-          description:
-            "Workflow prediktivního modelování zaměřené na chování tržních gapů, feature engineering a interpretovatelné vyhodnocení pro praktická výzkumná rozhodnutí.",
-          stack: ["scikit-learn", "Feature Engineering", "Backtesting"],
-          type: "Strojové učení"
         },
         {
           title: "AI kopilot pro trading journal",
@@ -269,6 +288,27 @@ export const copy = {
         "Na jakých projektech pracuje?",
         "Jaké jsou její hlavní dovednosti?",
         "Jak ji mohu kontaktovat?"
+      ]
+    },
+    writing: {
+      eyebrow: "Psaní",
+      title: "Poznámky, články a rozpracované texty.",
+      description:
+        "Prostor pro budoucí Medium články o analytice, aplikované AI, technickém řešení problémů a zkušenostech z kariérní změny.",
+      items: [
+        {
+          title: "Zástupný název článku",
+          description: "Budoucí Medium článek o analytice, aplikované AI nebo praktickém technickém učení.",
+          href: "https://medium.com/",
+          tag: "Medium"
+        },
+        {
+          title: "Další zástupný článek",
+          description:
+            "Zástupná položka pro text o projektech, řešení problémů nebo lekcích z přechodu do datové práce.",
+          href: "https://medium.com/",
+          tag: "Medium"
+        }
       ]
     },
     contactCta: {
@@ -332,6 +372,12 @@ export const copy = {
         { label: "LinkedIn", value: "Profesní spojení", href: siteMeta.linkedin },
         { label: "GitHub", value: "Technická práce", href: siteMeta.github }
       ]
+    },
+    writingPage: {
+      eyebrow: "Psaní",
+      title: "Texty a budoucí Medium články.",
+      description:
+        "Samostatné místo pro články, poznámky a postřehy o analytice, aplikované AI, projektech a technickém učení."
     }
   }
 } as const;
