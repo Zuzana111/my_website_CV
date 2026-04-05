@@ -25,7 +25,10 @@ export const featuredProjects = [
     type: "Machine Learning",
     links: [
       { label: "GitHub", href: "https://github.com/Zuzana111/investment_campaign_ml" },
-      { label: "Article", href: siteMeta.medium }
+      {
+        label: "Article",
+        href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c"
+      }
     ]
   },
   {
