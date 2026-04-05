@@ -119,9 +119,8 @@ export const copy = {
     },
     projectsPage: {
       eyebrow: "Projects",
-      title: "Portfolio projects designed to show analytical range.",
-      description:
-        "These initial projects are placeholders for a growing portfolio in analytics, predictive modeling, and AI-supported research workflows."
+      title: "Projects in Machine Learning, Analytics & AI",
+      description: ""
     },
     resumePage: {
       eyebrow: "Resume",
@@ -230,10 +229,10 @@ export const copy = {
           title: "Investment Campaign Targeting with ML",
           description:
             "Built a classification model to identify 3,000 banking clients most likely to invest in a second campaign round. Compared 5 models and selected Logistic Regression based on performance and interpretability.",
-          stack: ["Python", "scikit-learn", "SQL"],
+          stack: ["Python", "scikit-learn", "SQL", "Binary Classification"],
           type: "Machine Learning",
           links: [
-            { label: "GitHub", href: siteMeta.github },
+            { label: "GitHub", href: "https://github.com/Zuzana111/investment_campaign_ml" },
             { label: "Article", href: siteMeta.medium }
           ]
         },
