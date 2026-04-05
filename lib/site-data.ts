@@ -6,7 +6,7 @@ export const siteMeta = {
   location: "Prague, Czech Republic",
   github: "https://github.com/Zuzana111",
   linkedin: "https://www.linkedin.com/in/zuzana-s-sami/",
-  medium: "https://medium.com/"
+  medium: "https://medium.com/@zuzanalabs"
 };
 
 export const socialLinks = [
