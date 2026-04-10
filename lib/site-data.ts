@@ -28,23 +28,30 @@ export const featuredProjects = [
       { label: "Streamlit", href: "https://bankdashboard111.streamlit.app" },
       {
         label: "Article",
-        href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c"
+        href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c?source=friends_link&sk=bd54c7b649c876ef3e42371aca6c9f18"
       }
     ]
   },
   {
-    title: "Gap Fill Prediction Model",
+    title: "Intraday Futures Trading Bot",
     description:
-      "A predictive modeling workflow focused on market gap behavior, feature engineering, and interpretable evaluation for practical research decisions.",
-    stack: ["scikit-learn", "Feature Engineering", "Backtesting"],
-    type: "Machine Learning"
+      "Designed an event-driven decision engine in Python that reacts to intraday market data, evaluates signal conditions, and manages automated trade execution through the Interactive Brokers API.",
+    stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
+    type: "Trading Automation",
+    links: [
+      { label: "GitHub", href: "https://github.com/Zuzana111/intraday_futures_trading_bot/tree/main" },
+      {
+        label: "Article",
+        href: "https://medium.com/@zuzanalabs/building-a-real-time-futures-trading-bot-in-python-with-interactive-brokers-eed142357658?source=friends_link&sk=8740135ef14977331683638d7c080643"
+      }
+    ]
   },
   {
-    title: "AI Trading Journal Copilot",
+    title: "Intraday Options Trading Bot",
     description:
-      "A concept for an AI-assisted journaling tool that helps organize trades, extract patterns, and surface higher-quality review prompts over time.",
-    stack: ["LLM Workflows", "Prompt Design", "Product Thinking"],
-    type: "Applied AI"
+      "Built a second version of the decision engine for options instruments, adapting execution logic and risk rules to a different asset structure.",
+    stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
+    type: "Trading Automation"
   }
 ] as const;
 

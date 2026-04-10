@@ -61,9 +61,9 @@ export const copy = {
     },
     featuredProjects: {
       eyebrow: "Projects",
-      title: "Featured work at the intersection of analytics, modeling, and AI-enabled workflows.",
+      title: "Selected projects across analytics, machine learning, and trading automation.",
       description:
-        "These are early portfolio projects designed to show range: dashboard thinking, predictive modeling, and AI product direction.",
+        "This section highlights practical projects I built to show analytical thinking, technical execution, and the ability to turn ideas into working systems.",
       link: "See all projects",
       projects: featuredProjects
     },
@@ -119,8 +119,9 @@ export const copy = {
     },
     projectsPage: {
       eyebrow: "Projects",
-      title: "Projects in Machine Learning, Analytics & AI",
-      description: ""
+      title: "Projects in Analytics, Machine Learning, and Trading Automation",
+      description:
+        "A selection of hands-on projects built around predictive modeling, real-world data workflows, and live trading automation."
     },
     resumePage: {
       eyebrow: "Resume",
@@ -220,9 +221,9 @@ export const copy = {
     },
     featuredProjects: {
       eyebrow: "Projekty",
-      title: "Ukázky práce na pomezí analytiky, modelování a AI workflow.",
+      title: "Vybrané projekty z oblasti analytiky, strojového učení a trading automatizace.",
       description:
-        "Tyto první portfolio projekty ukazují šíři záběru: přemýšlení nad dashboardy, prediktivní modelování a směr AI produktů.",
+        "Tato sekce ukazuje praktické projekty, na kterých stavím technickou hloubku, analytické myšlení a schopnost převést nápad do funkčního řešení.",
       link: "Všechny projekty",
       projects: [
         {
@@ -236,23 +237,30 @@ export const copy = {
             { label: "Streamlit", href: "https://bankdashboard111.streamlit.app" },
             {
               label: "Article",
-              href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c"
+              href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c?source=friends_link&sk=bd54c7b649c876ef3e42371aca6c9f18"
             }
           ]
         },
         {
-          title: "Gap Fill analytický dashboard",
+          title: "Intradenní futures trading bot",
           description:
-            "Dashboard tržní struktury, který převádí chování obchodních seancí do přehledné analytiky a kombinuje čisté vizuální souhrny s metrikami pro rozhodování.",
-          stack: ["Python", "Pandas", "Plotly", "SQL"],
-          type: "Dashboard"
+            "Navrhla jsem event-driven rozhodovací engine v Pythonu, který reaguje na intradenní tržní data, vyhodnocuje signální podmínky a řídí automatizovanou exekuci obchodů přes Interactive Brokers API.",
+          stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
+          type: "Trading Automation",
+          links: [
+            { label: "GitHub", href: "https://github.com/Zuzana111/intraday_futures_trading_bot/tree/main" },
+            {
+              label: "Article",
+              href: "https://medium.com/@zuzanalabs/building-a-real-time-futures-trading-bot-in-python-with-interactive-brokers-eed142357658?source=friends_link&sk=8740135ef14977331683638d7c080643"
+            }
+          ]
         },
         {
-          title: "AI kopilot pro trading journal",
+          title: "Intradenní opční trading bot",
           description:
-            "Koncept AI asistovaného journaling nástroje, který pomáhá organizovat obchody, hledat vzorce a postupně vytvářet kvalitnější podněty pro zpětné vyhodnocení.",
-          stack: ["LLM workflow", "Prompt design", "Product thinking"],
-          type: "Aplikovaná AI"
+            "Vytvořila jsem druhou verzi stejného decision enginu pro opční instrumenty a přizpůsobila exekuční logiku i pravidla řízení rizika jiné struktuře aktiva.",
+          stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
+          type: "Trading Automation"
         }
       ]
     },
@@ -335,9 +343,9 @@ export const copy = {
     },
     projectsPage: {
       eyebrow: "Projekty",
-      title: "Portfolio projekty navržené tak, aby ukázaly analytický rozsah.",
+      title: "Projekty z analytiky, strojového učení a trading automatizace.",
       description:
-        "Tyto první projekty jsou zástupné místo pro rostoucí portfolio v analytice, prediktivním modelování a AI podporovaných výzkumných workflow."
+        "Výběr praktických projektů zaměřených na prediktivní modelování, práci s daty a živou obchodní automatizaci."
     },
     resumePage: {
       eyebrow: "Životopis",
