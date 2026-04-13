@@ -39,7 +39,7 @@ export const featuredProjects = [
     stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
     type: "Trading Automation",
     links: [
-      { label: "GitHub", href: "https://github.com/Zuzana111/intraday_futures_trading_bot/tree/main" },
+      { label: "GitHub", href: "https://github.com/Zuzana111/intraday_futures_trading_bot" },
       {
         label: "Article",
         href: "https://medium.com/@zuzanalabs/building-a-real-time-futures-trading-bot-in-python-with-interactive-brokers-eed142357658?source=friends_link&sk=8740135ef14977331683638d7c080643"
