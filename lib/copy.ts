@@ -106,7 +106,7 @@ export const copy = {
       eyebrow: "Contact",
       title: "Open to analytics and applied AI opportunities.",
       description:
-        "If you're hiring for a junior or transition-friendly role, or you want to discuss a project, I'd be glad to connect.",
+        "If you’re hiring for a data analyst or applied AI role, or want to discuss a project, I’d be glad to connect.",
       button: "Get In Touch"
     },
     aboutPage: {
@@ -360,7 +360,7 @@ export const copy = {
       eyebrow: "Kontakt",
       title: "Otevřená příležitostem v analytice a aplikované AI.",
       description:
-        "Pokud hledáte juniorní nebo transition-friendly roli, nebo chcete probrat projekt, ráda se spojím.",
+        "Pokud hledáte někoho na roli datového analytika nebo v aplikované AI, případně chcete probrat projekt, ráda se spojím.",
       button: "Ozvat se"
     },
     aboutPage: {
