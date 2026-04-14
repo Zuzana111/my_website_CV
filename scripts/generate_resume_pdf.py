@@ -144,7 +144,7 @@ def main() -> None:
     pdf.text("Zuzana Shivram Sami", MARGIN_X, pdf.y, size=27, font="F2", color="0.16 0.13 0.15")
     pdf.y -= 25
     pdf.text(
-        "Data Analytics & Applied AI | Former SAP Basis & Security Specialist",
+        "Data Analytics & Applied AI - Former SAP Basis & Security Specialist",
         MARGIN_X,
         pdf.y,
         size=11.5,
@@ -153,8 +153,8 @@ def main() -> None:
     )
     pdf.y -= 22
     pdf.paragraph(
-        "Prague, Czech Republic | trnkovaz@gmail.com | +420 774 888 074 | "
-        "linkedin.com/in/zuzana-s-sami | github.com/Zuzana111 | medium.com/@zuzanalabs",
+        "trnkovaz@gmail.com | +420 774 888 074 | linkedin.com/in/zuzana-s-sami | "
+        "github.com/Zuzana111 | medium.com/@zuzanalabs",
         size=8.8,
         leading=12,
         color="0.34 0.28 0.31",
@@ -240,6 +240,10 @@ def main() -> None:
     pdf.heading("Education")
     pdf.bullet("Master's Degree, Informatics / Information Systems - Masaryk University Brno", indent=0)
     pdf.bullet("Bachelor's Degree, Applied Informatics - Masaryk University Brno", indent=0)
+
+    pdf.heading("Languages")
+    for item in ["Czech - native", "English - professional", "German - basic"]:
+        pdf.bullet(item, indent=0)
 
     pdf.heading("Certifications & Training")
     for item in [

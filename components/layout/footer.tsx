@@ -12,7 +12,6 @@ export function Footer() {
         <p>
           {siteMeta.name} • {content.footer.title}
         </p>
-        <p>{content.footer.location}</p>
       </div>
     </footer>
   );

@@ -40,30 +40,30 @@ export const copy = {
       welcome: "Welcome!",
       title: "Transitioning into data analytics and applied AI with a practical builder's mindset.",
       description:
-        "I design data-driven tools, research workflows, and analytics projects that turn complexity into clear, useful decisions.",
+        "I build data products and AI tools — from ML classification models and trading bots to RAG pipelines with LangChain and OpenAI.",
       primaryCta: "View Projects",
       secondaryCta: "Resume",
-      focusTitle: "Current Focus",
+      focusTitle: "Current focus:",
       focusItems: [
-        "Building portfolio projects that blend analytics, prediction, and workflow design.",
-        "Developing strong foundations in data storytelling, experimentation, and model evaluation.",
-        "Exploring practical AI products that support real-world decision making."
+        "Building projects in analytics and applied AI — ML models, trading systems, and RAG pipelines.",
+        "Packaging them into usable tools — deployed on Streamlit with live demos anyone can try.",
+        "Documenting the process through GitHub and technical writing on Medium."
       ]
     },
     aboutSnapshot: {
-      eyebrow: "About",
+      eyebrow: "About me",
       title: "A transition grounded in analytical thinking and practical execution.",
       description:
-        "This first portfolio version introduces the kind of work I want to do: thoughtful analytics, applied machine learning, and products that make technical insight easier to use.",
+        "Former SAP consultant with 10+ years in enterprise IT, now focused on data analytics and applied AI. I build practical projects in Python, SQL, machine learning, and Streamlit with an emphasis on clarity, usability, and business relevance.",
       body:
         "I'm moving into data analytics and applied AI through hands-on projects that combine research, data interpretation, and technical problem solving. My interest is in building systems that are not only technically sound, but also clear, useful, and easy to trust.",
       link: "More about my background"
     },
     featuredProjects: {
       eyebrow: "Projects",
-      title: "Selected projects across analytics, machine learning, and trading automation.",
+      title: "Selected Projects",
       description:
-        "This section highlights practical projects I built to show analytical thinking, technical execution, and the ability to turn ideas into working systems.",
+        "From ML classifiers and algorithmic trading bots to RAG-powered AI tools — all deployed, all with code.",
       link: "See all projects",
       projects: featuredProjects
     },
@@ -76,18 +76,22 @@ export const copy = {
     },
     chatbot: {
       eyebrow: "Assistant",
-      title: "Ask my portfolio assistant.",
+      title: "Try my AI portfolio assistant.",
       description:
-        "Ask about my background, projects, skills, or contact details. This demo assistant is grounded in the content of this site.",
+        "Explore my background, projects, and skills through an AI assistant I built from my portfolio content.",
+      ctaLabel: "Open AI Portfolio Assistant",
+      ctaHref: "https://chat.zuzanalabs.com",
+      repoLabel: "View GitHub Repo",
+      repoHref: "https://github.com/Zuzana111/my_website_chatbot",
       welcome:
         "Hi, I'm Zuzana's portfolio assistant. Ask me anything about her experience, projects, resume, or how to get in touch.",
       inputPlaceholder: "Ask a question about Zuzana...",
       sendLabel: "Send",
       promptLabel: "Try one of these:",
       prompts: [
-        "What is Zuzana's background?",
-        "What projects is she working on?",
-        "What are her core skills?",
+        "Summarize Zuzana's background",
+        "Which projects are most relevant for AI roles?",
+        "What are her strongest technical skills?",
         "How can I contact her?"
       ]
     },
@@ -158,9 +162,9 @@ export const copy = {
     },
     writingPage: {
       eyebrow: "Writing",
-      title: "Writing and future Medium articles.",
+      title: "Technical writing on data, AI, and building things.",
       description:
-        "A dedicated place for articles, notes, and reflections on analytics, applied AI, projects, and technical learning."
+        "I write about projects I build — the decisions, the code, and what I learned along the way. Published on Medium."
     }
   },
   cs: {
@@ -200,30 +204,30 @@ export const copy = {
       welcome: "Vítejte!",
       title: "Směřuji do datové analytiky a aplikované AI s praktickým přístupem k tvorbě řešení.",
       description:
-        "Navrhuji datově orientované nástroje, výzkumné workflow a analytické projekty, které mění složitost v jasná a použitelná rozhodnutí.",
+        "Stavím datové produkty a AI nástroje — od ML klasifikačních modelů a trading botů po RAG pipelines s LangChain a OpenAI.",
       primaryCta: "Zobrazit projekty",
       secondaryCta: "Životopis",
-      focusTitle: "Na co se teď soustředím",
+      focusTitle: "Aktuální zaměření",
       focusItems: [
-        "Tvořím portfolio projektů, které propojují analytiku, predikci a návrh workflow.",
-        "Buduji si pevné základy v datovém storytellingu, experimentování a vyhodnocování modelů.",
-        "Zkoumám praktické AI produkty, které podporují rozhodování v reálném světě."
+        "Stavím projekty v analytice a aplikované AI — ML modely, trading systémy a RAG pipelines.",
+        "Balím je do použitelných nástrojů — nasazených na Streamlitu s živými demy, která si může kdokoliv vyzkoušet.",
+        "Dokumentuji celý proces přes GitHub a technické psaní na Medium."
       ]
     },
     aboutSnapshot: {
       eyebrow: "O mně",
       title: "Kariérní změna postavená na analytickém myšlení a praktickém provedení.",
       description:
-        "Tato první verze portfolia představuje typ práce, kterému se chci věnovat: promyšlená analytika, aplikované strojové učení a produkty, které zpřístupňují technické poznatky.",
+        "Bývalá SAP konzultantka s více než 10 lety zkušeností v enterprise IT, nyní zaměřená na datovou analytiku a aplikovanou AI. Stavím praktické projekty v Pythonu, SQL, machine learningu a Streamlitu s důrazem na srozumitelnost, použitelnost a business relevanci.",
       body:
         "Do datové analytiky a aplikované AI přecházím skrze praktické projekty, které spojují výzkum, interpretaci dat a technické řešení problémů. Zajímá mě tvorba systémů, které jsou nejen technicky kvalitní, ale také srozumitelné, užitečné a důvěryhodné.",
       link: "Více o mém zázemí"
     },
     featuredProjects: {
       eyebrow: "Projekty",
-      title: "Vybrané projekty z oblasti analytiky, strojového učení a trading automatizace.",
+      title: "Vybrané projekty",
       description:
-        "Tato sekce ukazuje praktické projekty, na kterých stavím technickou hloubku, analytické myšlení a schopnost převést nápad do funkčního řešení.",
+        "Od ML klasifikátorů a algoritmických trading botů po AI nástroje postavené na RAG — vše nasazené, vše s kódem.",
       link: "Všechny projekty",
       projects: [
         {
@@ -261,6 +265,17 @@ export const copy = {
             "Vytvořila jsem druhou verzi stejného decision enginu pro opční instrumenty a přizpůsobila exekuční logiku i pravidla řízení rizika jiné struktuře aktiva.",
           stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
           type: "Trading Automation"
+        },
+        {
+          title: "RAG Portfolio Assistant",
+          description:
+            "LLM-powered portfolio assistant using RAG that answers questions about my background and projects. Indexes documents using vector embeddings for semantic search, retrieves relevant context, and generates accurate answers with GPT-4o-mini.",
+          stack: ["LLM", "Python", "LangChain", "FAISS", "OpenAI", "RAG", "Streamlit"],
+          type: "Applied AI",
+          links: [
+            { label: "GitHub", href: "https://github.com/Zuzana111/my_website_chatbot" },
+            { label: "Live demo", href: "https://chat.zuzanalabs.com" }
+          ]
         }
       ]
     },
@@ -286,18 +301,22 @@ export const copy = {
     },
     chatbot: {
       eyebrow: "Asistent",
-      title: "Zeptejte se mého portfolio asistenta.",
+      title: "Vyzkoušejte mého AI portfolio asistenta.",
       description:
-        "Ptejte se na mé zkušenosti, projekty, dovednosti nebo kontakt. Tento demo asistent odpovídá podle obsahu tohoto webu.",
+        "Projděte si mé zkušenosti, projekty a dovednosti přes AI asistenta, kterého jsem postavila z obsahu svého portfolia.",
+      ctaLabel: "Otevřít AI portfolio asistenta",
+      ctaHref: "https://chat.zuzanalabs.com",
+      repoLabel: "Zobrazit GitHub repo",
+      repoHref: "https://github.com/Zuzana111/my_website_chatbot",
       welcome:
         "Ahoj, jsem portfolio asistent Zuzany. Zeptejte se na její zkušenosti, projekty, životopis nebo jak ji kontaktovat.",
       inputPlaceholder: "Zeptejte se na Zuzanu...",
       sendLabel: "Odeslat",
       promptLabel: "Zkuste třeba:",
       prompts: [
-        "Jaké má Zuzana zkušenosti?",
-        "Na jakých projektech pracuje?",
-        "Jaké jsou její hlavní dovednosti?",
+        "Shrň Zuzanino profesní zázemí",
+        "Které projekty jsou nejrelevantnější pro AI role?",
+        "Jaké jsou její nejsilnější technické dovednosti?",
         "Jak ji mohu kontaktovat?"
       ]
     },
@@ -308,17 +327,32 @@ export const copy = {
         "Prostor pro budoucí Medium články o analytice, aplikované AI, technickém řešení problémů a zkušenostech z kariérní změny.",
       items: [
         {
-          title: "Zástupný název článku",
-          description: "Budoucí Medium článek o analytice, aplikované AI nebo praktickém technickém učení.",
-          href: "https://medium.com/",
-          tag: "Medium"
+          category: "Machine Learning",
+          title: "Building a Machine Learning Model to Predict Which Clients Were Most Likely to Invest",
+          description:
+            "How I built a binary classification pipeline to identify 3,000 banking clients for a second investment campaign — comparing 5 models and deploying the result as a live Streamlit dashboard.",
+          href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c?source=friends_link&sk=bd54c7b649c876ef3e42371aca6c9f18",
+          readTime: "5 min read",
+          accent: "violet"
         },
         {
-          title: "Další zástupný článek",
+          category: "Trading Automation",
+          title: "Building a Real-Time Futures Trading Bot in Python with Interactive Brokers",
           description:
-            "Zástupná položka pro text o projektech, řešení problémů nebo lekcích z přechodu do datové práce.",
-          href: "https://medium.com/",
-          tag: "Medium"
+            "A walkthrough of the event-driven architecture behind an automated trading system — from ingesting real-time OHLCV data to managing trade execution through the Interactive Brokers API.",
+          href: "https://medium.com/@zuzanalabs/building-a-real-time-futures-trading-bot-in-python-with-interactive-brokers-eed142357658?source=friends_link&sk=8740135ef14977331683638d7c080643",
+          readTime: "6 min read",
+          accent: "green"
+        },
+        {
+          category: "Applied AI",
+          title: "How I Built a RAG Portfolio Assistant with LangChain and FAISS",
+          description:
+            "From zero to a deployed AI chatbot — building a retrieval-augmented generation pipeline over custom documents using LangChain, FAISS, and OpenAI GPT-4o-mini.",
+          href: "#",
+          readTime: "~12 min read",
+          status: "Coming soon",
+          accent: "sand"
         }
       ]
     },
@@ -386,9 +420,9 @@ export const copy = {
     },
     writingPage: {
       eyebrow: "Psaní",
-      title: "Texty a budoucí Medium články.",
+      title: "Technické psaní o datech, AI a stavění věcí.",
       description:
-        "Samostatné místo pro články, poznámky a postřehy o analytice, aplikované AI, projektech a technickém učení."
+        "Píšu o projektech, které stavím — o rozhodnutích, kódu a o tom, co jsem se po cestě naučila. Publikováno na Medium."
     }
   }
 } as const;

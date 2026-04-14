@@ -53,6 +53,17 @@ export const featuredProjects = [
       "Built a second version of the decision engine for options instruments, adapting execution logic and risk rules to a different asset structure.",
     stack: ["Python", "Real-Time Data Processing", "Event-Driven Architecture", "API Integration", "Algorithmic Trading"],
     type: "Trading Automation"
+  },
+  {
+    title: "RAG Portfolio Assistant",
+    description:
+      "LLM-powered portfolio assistant using RAG that answers questions about my background and projects. Indexes documents using vector embeddings for semantic search, retrieves relevant context, and generates accurate answers with GPT-4o-mini.",
+    stack: ["LLM", "Python", "LangChain", "FAISS", "OpenAI", "RAG", "Streamlit"],
+    type: "Applied AI",
+    links: [
+      { label: "GitHub", href: "https://github.com/Zuzana111/my_website_chatbot" },
+      { label: "Live demo", href: "https://chat.zuzanalabs.com" }
+    ]
   }
 ] as const;
 
@@ -63,26 +74,46 @@ export const skillGroups = [
   },
   {
     title: "Modeling",
-    items: ["scikit-learn", "Experiment Design", "Feature Engineering", "Evaluation"]
+    items: ["scikit-learn", "Feature Engineering", "Model Evaluation", "Keras"]
   },
   {
     title: "Tools",
-    items: ["Jupyter", "Git", "Streamlit", "Dashboards"]
+    items: ["Jupyter", "Git", "Streamlit", "GitHub"]
+  },
+  {
+    title: "AI & LLM",
+    items: ["LangChain", "OpenAI API", "RAG pipelines", "FAISS"]
   }
 ] as const;
 
 export const writingItems = [
   {
-    title: "Article Title Placeholder",
-    description: "A future Medium article about analytics, applied AI, or practical technical learning.",
-    href: "https://medium.com/",
-    tag: "Medium"
+    category: "Machine Learning",
+    title: "Building a Machine Learning Model to Predict Which Clients Were Most Likely to Invest",
+    description:
+      "How I built a binary classification pipeline to identify 3,000 banking clients for a second investment campaign — comparing 5 models and deploying the result as a live Streamlit dashboard.",
+    href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c?source=friends_link&sk=bd54c7b649c876ef3e42371aca6c9f18",
+    readTime: "5 min read",
+    accent: "violet"
   },
   {
-    title: "Another Article Placeholder",
-    description: "A placeholder entry for writing about projects, problem solving, or lessons from the transition into data work.",
-    href: "https://medium.com/",
-    tag: "Medium"
+    category: "Trading Automation",
+    title: "Building a Real-Time Futures Trading Bot in Python with Interactive Brokers",
+    description:
+      "A walkthrough of the event-driven architecture behind an automated trading system — from ingesting real-time OHLCV data to managing trade execution through the Interactive Brokers API.",
+    href: "https://medium.com/@zuzanalabs/building-a-real-time-futures-trading-bot-in-python-with-interactive-brokers-eed142357658?source=friends_link&sk=8740135ef14977331683638d7c080643",
+    readTime: "6 min read",
+    accent: "green"
+  },
+  {
+    category: "Applied AI",
+    title: "How I Built a RAG Portfolio Assistant with LangChain and FAISS",
+    description:
+      "From zero to a deployed AI chatbot — building a retrieval-augmented generation pipeline over custom documents using LangChain, FAISS, and OpenAI GPT-4o-mini.",
+    href: "#",
+    readTime: "~12 min read",
+    status: "Coming soon",
+    accent: "sand"
   }
 ] as const;
 

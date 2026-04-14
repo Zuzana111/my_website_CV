@@ -81,12 +81,6 @@ export default function ContactPage() {
             </span>
             <span>{siteMeta.email}</span>
           </a>
-          <div className="flex items-center gap-4 text-lg text-foreground/80">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft/75">
-              <ContactIcon type="location" />
-            </span>
-            <span>{siteMeta.location}</span>
-          </div>
         </div>
         <form onSubmit={handleSubmit} className="space-y-5 rounded-[1.75rem] border border-border bg-white/65 p-6 sm:p-8">
           <div className="grid gap-5 sm:grid-cols-2">

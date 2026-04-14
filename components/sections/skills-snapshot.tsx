@@ -1,7 +1,6 @@
 "use client";
 
 import { useCopy } from "@/components/layout/locale-provider";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { SkillGroup } from "@/components/ui/skill-group";
 
 export function SkillsSnapshot() {
@@ -9,12 +8,8 @@ export function SkillsSnapshot() {
 
   return (
     <section className="space-y-8">
-      <SectionHeading
-        eyebrow={content.skills.eyebrow}
-        title={content.skills.title}
-        description={content.skills.description}
-      />
-      <div className="grid gap-8 md:grid-cols-3">
+      <p className="section-title">{content.skills.eyebrow}</p>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {content.skills.groups.map((group) => (
           <SkillGroup key={group.title} {...group} />
         ))}

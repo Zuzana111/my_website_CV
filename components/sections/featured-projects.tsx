@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function FeaturedProjects() {
   const content = useCopy();
+  const homepageProjects = content.featuredProjects.projects.filter((project) => project.title !== "RAG Portfolio Assistant");
 
   return (
     <section className="space-y-8">
@@ -21,7 +22,7 @@ export function FeaturedProjects() {
         </Link>
       </div>
       <div className="grid gap-8 lg:grid-cols-3">
-        {content.featuredProjects.projects.map((project) => (
+        {homepageProjects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
       </div>

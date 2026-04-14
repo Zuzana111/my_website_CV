@@ -1,8 +1,21 @@
-const technicalSkills = {
-  strong: ["SQL", "Data analysis", "Data storytelling"],
-  working: ["Python", "pandas", "Streamlit", "Plotly", "Jupyter", "Git"],
-  familiar: ["scikit-learn", "Keras", "ABAP"]
-};
+const skillGroups = [
+  {
+    title: "Data & Analysis",
+    items: ["Python", "SQL", "Pandas", "Plotly", "Jupyter"]
+  },
+  {
+    title: "Machine Learning",
+    items: ["scikit-learn", "Keras", "FAISS", "Feature Engineering"]
+  },
+  {
+    title: "AI & LLM",
+    items: ["LangChain", "OpenAI API", "RAG", "Prompt Engineering"]
+  },
+  {
+    title: "Tools",
+    items: ["Streamlit", "Git", "Dashboards", "ABAP"]
+  }
+];
 
 const interests = [
   "Financial markets & trading systems",
@@ -11,27 +24,15 @@ const interests = [
   "Applied AI in real-world workflows"
 ];
 
-function SkillChip({ children, tier }: { children: string; tier: "strong" | "working" | "familiar" }) {
-  const styles = {
-    strong: "border-accent bg-accent-soft/60 text-accent-deep opacity-100 font-bold",
-    working: "border-border bg-white text-foreground/75 opacity-100",
-    familiar: "border-border bg-white text-foreground/45 opacity-45"
-  };
-
+function SkillChip({ children }: { children: string }) {
   return (
-    <span className={`rounded-full border px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] ${styles[tier]}`}>
+    <span className="rounded-full border border-border bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/68">
       {children}
     </span>
   );
 }
 
 export default function AboutPage() {
-  const allTechnicalSkills = [
-    ...technicalSkills.strong.map((skill) => ({ skill, tier: "strong" as const })),
-    ...technicalSkills.working.map((skill) => ({ skill, tier: "working" as const })),
-    ...technicalSkills.familiar.map((skill) => ({ skill, tier: "familiar" as const }))
-  ];
-
   return (
     <div className="space-y-10">
       <section className="border-b border-border pb-10">
@@ -75,41 +76,29 @@ export default function AboutPage() {
 
       <section className="border-t border-border pt-8">
         <h2 className="text-2xl font-semibold tracking-tight">Skills</h2>
-        <div className="mt-6 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[1.5rem] border border-border bg-white/75 p-6">
-            <h3 className="text-xl font-semibold tracking-tight">Technical skills</h3>
-            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/58">
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-accent-deep" />
-                Strong
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full border border-accent bg-white" />
-                Working knowledge
-              </span>
-              <span className="inline-flex items-center gap-2 opacity-45">
-                <span className="h-2.5 w-2.5 rounded-full border border-foreground/35 bg-white" />
-                Familiar
-              </span>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {skillGroups.map((group) => (
+            <div key={group.title} className="rounded-[1.5rem] border border-border bg-white/75 p-6">
+              <h3 className="text-xl font-semibold tracking-tight">{group.title}</h3>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {group.items.map((item) => (
+                  <SkillChip key={item}>{item}</SkillChip>
+                ))}
+              </div>
             </div>
-            <div className="mt-5 flex flex-wrap gap-3">
-              {allTechnicalSkills.map((item) => (
-                <SkillChip key={item.skill} tier={item.tier}>
-                  {item.skill}
-                </SkillChip>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-[1.5rem] border border-border bg-white/75 p-6">
-            <h3 className="text-xl font-semibold tracking-tight">Interests</h3>
-            <ul className="mt-6 space-y-4 text-base leading-8 text-foreground/74">
-              {interests.map((interest) => (
-                <li key={interest}>{interest}</li>
-              ))}
-            </ul>
-          </div>
+          ))}
         </div>
+      </section>
+
+      <section className="border-t border-border pt-8">
+        <h2 className="text-2xl font-semibold tracking-tight">Interests</h2>
+        <ul className="mt-6 grid gap-4 text-base leading-8 text-foreground/74 md:grid-cols-2">
+          {interests.map((interest) => (
+            <li key={interest} className="rounded-[1.2rem] border border-border bg-white/75 px-5 py-4">
+              {interest}
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

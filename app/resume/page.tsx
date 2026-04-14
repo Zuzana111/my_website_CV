@@ -8,13 +8,14 @@ const resumeContent = {
   en: {
     eyebrow: "Resume",
     name: "Zuzana Shivram Sami",
-    title: "Data Analytics & Applied AI | Former SAP Basis & Security Specialist",
+    title: "Data Analytics & Applied AI — Former SAP Basis & Security Specialist",
     downloadCv: "Download CV",
     sections: {
       professionalSummary: "Professional Summary",
       coreSkills: "Core Skills",
       experience: "Experience",
       education: "Education",
+      languages: "Languages",
       certifications: "Certifications & Training",
       interests: "Interests"
     },
@@ -97,6 +98,7 @@ const resumeContent = {
       "Master's Degree, Informatics / Information Systems - Masaryk University Brno",
       "Bachelor's Degree, Applied Informatics - Masaryk University Brno"
     ],
+    languages: ["Czech — native", "English — professional", "German — basic"],
     certifications: [
       "Data science bootcamp covering Python, SQL, machine learning, ETL, NLP, dashboards, and model tuning",
       "ITIL Foundation V3",
@@ -109,13 +111,14 @@ const resumeContent = {
   cs: {
     eyebrow: "Životopis",
     name: "Zuzana Shivram Sami",
-    title: "Datová analytika a aplikovaná AI | Bývalá specialistka na SAP Basis a Security",
+    title: "Datová analytika a aplikovaná AI — Bývalá specialistka na SAP Basis a Security",
     downloadCv: "Stáhnout CV",
     sections: {
       professionalSummary: "Profesní shrnutí",
       coreSkills: "Klíčové dovednosti",
       experience: "Praxe",
       education: "Vzdělání",
+      languages: "Jazyky",
       certifications: "Certifikace a školení",
       interests: "Zájmy"
     },
@@ -198,6 +201,7 @@ const resumeContent = {
       "Magisterský titul, Informatika / Informační systémy - Masarykova univerzita Brno",
       "Bakalářský titul, Aplikovaná informatika - Masarykova univerzita Brno"
     ],
+    languages: ["Čeština — rodilá úroveň", "Angličtina — profesionální úroveň", "Němčina — základní úroveň"],
     certifications: [
       "Data science bootcamp zaměřený na Python, SQL, machine learning, ETL, NLP, dashboardy a ladění modelů",
       "ITIL Foundation V3",
@@ -284,6 +288,14 @@ export default function ResumePage() {
       <ResumeSection title={content.sections.education}>
         <ul className="space-y-3">
           {content.education.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </ResumeSection>
+
+      <ResumeSection title={content.sections.languages}>
+        <ul className="space-y-3">
+          {content.languages.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
