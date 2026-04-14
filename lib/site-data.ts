@@ -26,7 +26,7 @@ export const featuredProjects = [
     type: "Machine Learning",
     links: [
       { label: "GitHub", href: "https://github.com/Zuzana111/investment_campaign_ml" },
-      { label: "Streamlit", href: "https://bankdashboard111.streamlit.app" },
+      { label: "Streamlit", href: "https://banking.zuzanalabs.com" },
       {
         label: "Article",
         href: "https://medium.com/@zuzanalabs/building-a-machine-learning-model-to-predict-which-clients-were-most-likely-to-invest-c8790dcf988c?source=friends_link&sk=bd54c7b649c876ef3e42371aca6c9f18"
