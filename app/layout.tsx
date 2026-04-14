@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { LocaleProvider } from "@/components/layout/locale-provider";
 import { copy, defaultLocale } from "@/lib/copy";
+import { siteMeta } from "@/lib/site-data";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -13,8 +14,25 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteMeta.url),
   title: copy[defaultLocale].meta.title,
-  description: copy[defaultLocale].meta.description
+  description: copy[defaultLocale].meta.description,
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    title: copy[defaultLocale].meta.title,
+    description: copy[defaultLocale].meta.description,
+    url: siteMeta.url,
+    siteName: "Zuzana Labs",
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary",
+    title: copy[defaultLocale].meta.title,
+    description: copy[defaultLocale].meta.description
+  }
 };
 
 export default function RootLayout({

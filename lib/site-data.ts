@@ -4,6 +4,7 @@ export const siteMeta = {
   email: "trnkovaz@gmail.com",
   phone: "+420 774 888 074",
   location: "Prague, Czech Republic",
+  url: "https://zuzanalabs.com",
   github: "https://github.com/Zuzana111",
   linkedin: "https://www.linkedin.com/in/zuzana-s-sami/",
   medium: "https://medium.com/@zuzanalabs"
