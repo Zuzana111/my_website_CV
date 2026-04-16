@@ -2,6 +2,7 @@
 
 import { useCopy } from "@/components/layout/locale-provider";
 import { ButtonLink } from "@/components/ui/button-link";
+import { trackEvent } from "@/lib/analytics";
 import { siteMeta } from "@/lib/site-data";
 
 export function ContactCta() {
@@ -19,6 +20,12 @@ export function ContactCta() {
           <ButtonLink href="/contact">{content.contactCta.button}</ButtonLink>
           <a
             href={`mailto:${siteMeta.email}`}
+            onClick={() =>
+              trackEvent("email_click", {
+                link_location: "home_contact_cta",
+                destination: "email"
+              })
+            }
             className="inline-flex items-center justify-center text-sm font-semibold text-foreground/72 transition hover:text-accent-deep"
           >
             {siteMeta.email}

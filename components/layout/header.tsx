@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCopy, useLocale } from "@/components/layout/locale-provider";
+import { trackEvent } from "@/lib/analytics";
 import { siteMeta } from "@/lib/site-data";
 
 export function Header() {
@@ -62,6 +63,12 @@ export function Header() {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={() =>
+                  trackEvent(`${link.label.toLowerCase()}_click`, {
+                    link_location: "header",
+                    destination: link.label.toLowerCase()
+                  })
+                }
                 className="text-sm text-foreground/66 transition hover:text-accent-deep"
               >
                 {link.label}

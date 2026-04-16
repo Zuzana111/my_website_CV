@@ -1,3 +1,7 @@
+"use client";
+
+import { trackEvent } from "@/lib/analytics";
+
 type ProjectCardProps = {
   title: string;
   description: string;
@@ -31,6 +35,15 @@ export function ProjectCard({ title, description, type, stack, links }: ProjectC
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() =>
+                trackEvent("project_click", {
+                  project_name: title,
+                  link_label: link.label,
+                  source_page: window.location.pathname
+                })
+              }
               className="inline-flex rounded-full bg-accent px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-accent-deep"
             >
               {link.label}

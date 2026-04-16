@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useLocale } from "@/components/layout/locale-provider";
+import { trackEvent } from "@/lib/analytics";
 import { siteMeta } from "@/lib/site-data";
 
 const resumeContent = {
@@ -239,13 +240,44 @@ export default function ResumePage() {
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">{content.name}</h1>
         <p className="mt-3 text-xl text-foreground/76">{content.title}</p>
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
-          <a href="/resume.pdf" className="border-b border-accent pb-1 text-accent-deep transition hover:border-accent-deep">
+          <a
+            href="/resume.pdf"
+            onClick={() =>
+              trackEvent("resume_download", {
+                source_page: "/resume",
+                destination: "resume_pdf"
+              })
+            }
+            className="border-b border-accent pb-1 text-accent-deep transition hover:border-accent-deep"
+          >
             {content.downloadCv}
           </a>
-          <a href={siteMeta.linkedin} className="border-b border-transparent pb-1 text-foreground/72 transition hover:text-accent-deep">
+          <a
+            href={siteMeta.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() =>
+              trackEvent("linkedin_click", {
+                link_location: "resume_header",
+                destination: "linkedin"
+              })
+            }
+            className="border-b border-transparent pb-1 text-foreground/72 transition hover:text-accent-deep"
+          >
             LinkedIn
           </a>
-          <a href={siteMeta.github} className="border-b border-transparent pb-1 text-foreground/72 transition hover:text-accent-deep">
+          <a
+            href={siteMeta.github}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() =>
+              trackEvent("github_click", {
+                link_location: "resume_header",
+                destination: "github"
+              })
+            }
+            className="border-b border-transparent pb-1 text-foreground/72 transition hover:text-accent-deep"
+          >
             GitHub
           </a>
         </div>

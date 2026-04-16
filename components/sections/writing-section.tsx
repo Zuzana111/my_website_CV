@@ -1,6 +1,7 @@
 "use client";
 
 import { useCopy } from "@/components/layout/locale-provider";
+import { trackEvent } from "@/lib/analytics";
 
 const accentStyles = {
   violet: "text-[#5f56b3]",
@@ -43,7 +44,20 @@ export function WritingSection() {
           }
 
           return (
-            <a key={item.title} href={item.href} target="_blank" rel="noreferrer" className={cardClass}>
+            <a
+              key={item.title}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() =>
+                trackEvent("medium_click", {
+                  article_title: item.title,
+                  link_location: "writing_page",
+                  destination: "medium"
+                })
+              }
+              className={cardClass}
+            >
               {body}
             </a>
           );

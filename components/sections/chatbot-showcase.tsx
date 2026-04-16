@@ -1,6 +1,7 @@
 "use client";
 
 import { useCopy } from "@/components/layout/locale-provider";
+import { trackEvent } from "@/lib/analytics";
 
 const promptIcons = ["♙", "□", "</>", "✉"];
 
@@ -38,6 +39,12 @@ export function ChatbotShowcase() {
               href={content.chatbot.ctaHref}
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                trackEvent("chatbot_click", {
+                  link_location: "home_chatbot_cta",
+                  destination: "chatbot"
+                })
+              }
               className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-accent-deep"
             >
               <span aria-hidden="true">✦</span>
@@ -50,6 +57,12 @@ export function ChatbotShowcase() {
               href={content.chatbot.repoHref}
               target="_blank"
               rel="noreferrer"
+              onClick={() =>
+                trackEvent("github_click", {
+                  link_location: "home_chatbot_repo",
+                  destination: "github"
+                })
+              }
               className="inline-flex items-center gap-2 rounded-xl px-1 py-3 text-sm font-semibold text-foreground/76 transition hover:text-accent-deep"
             >
               {content.chatbot.repoLabel}
@@ -66,6 +79,13 @@ export function ChatbotShowcase() {
                   href={content.chatbot.ctaHref}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() =>
+                    trackEvent("chatbot_prompt_click", {
+                      prompt,
+                      link_location: "home_chatbot_prompts",
+                      destination: "chatbot"
+                    })
+                  }
                   className="inline-flex items-center gap-3 rounded-full border border-accent/14 bg-white px-4 py-2.5 text-sm text-foreground/78 shadow-[0_10px_28px_rgba(91,54,75,0.06)] transition hover:-translate-y-0.5 hover:border-accent/35 hover:text-accent-deep"
                 >
                   <span className="font-semibold text-accent-deep" aria-hidden="true">

@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import { useCopy } from "@/components/layout/locale-provider";
 import { PageIntro } from "@/components/layout/page-intro";
+import { trackEvent } from "@/lib/analytics";
 import { siteMeta } from "@/lib/site-data";
 
 function ContactIcon({ type }: { type: "phone" | "email" | "location" }) {
@@ -51,6 +52,11 @@ export default function ContactPage() {
       message || "-"
     ].join("\n");
 
+    trackEvent("contact_form_submit", {
+      source_page: "/contact",
+      destination: "email"
+    });
+
     window.location.href = `mailto:${siteMeta.email}?subject=${encodeURIComponent(composedSubject)}&body=${encodeURIComponent(composedBody)}`;
   }
 
@@ -65,6 +71,12 @@ export default function ContactPage() {
         <div className="space-y-7 pt-1">
           <a
             href={`tel:${siteMeta.phone.replace(/\s+/g, "")}`}
+            onClick={() =>
+              trackEvent("phone_click", {
+                link_location: "contact_page",
+                destination: "phone"
+              })
+            }
             className="flex items-center gap-4 text-lg text-foreground/80 transition hover:text-accent-deep"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft/75">
@@ -74,6 +86,12 @@ export default function ContactPage() {
           </a>
           <a
             href={`mailto:${siteMeta.email}`}
+            onClick={() =>
+              trackEvent("email_click", {
+                link_location: "contact_page",
+                destination: "email"
+              })
+            }
             className="flex items-center gap-4 text-lg text-foreground/80 transition hover:text-accent-deep"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft/75">
