@@ -111,15 +111,42 @@ export const copy = {
     },
     aboutPage: {
       eyebrow: "About",
-      title: "A practical path into analytics and applied AI.",
-      description:
-        "This portfolio is built around a career transition: learning by making, refining technical depth through projects, and focusing on work that creates clarity from data.",
+      title: "Enterprise background. Analytics and AI focus, now.",
       backgroundTitle: "Background",
       backgroundBody:
-        "My transition into data analytics and applied AI is grounded in curiosity, structure, and a strong bias toward useful outputs. I enjoy breaking down complex topics, organizing messy information, and building workflows that produce something clear and actionable.",
-      buildingTitle: "What I'm Building",
-      buildingBody:
-        "I'm developing project work across market analytics, predictive modeling, and AI-assisted tools. The common thread is decision support: helping people move from raw information to better understanding and better action."
+        "I spent 10+ years in enterprise IT — at Accenture, Škoda Auto, CETIN, and others — working on SAP environments where data quality and system reliability were business-critical. That work taught me how to operate inside complex technical environments, where precision matters and things break in ways that affect real people.",
+      shiftTitle: "The shift",
+      shiftBody:
+        "My interest in financial markets is what pulled me fully into data and AI. I wanted to build systems that analyse and predict — not just maintain. After completing Data Science Bootcamp at Coding Bootcamp Praha, I built real projects: an ML classification model to target banking clients, deployed as a live Streamlit dashboard, and two event-driven trading bots in Python connected to the Interactive Brokers API. I write about my work on Medium, because explaining what you've built is as important as building it.",
+      lookingTitle: "What I'm looking for",
+      lookingBody:
+        "I'm open to roles across data analytics, data science, and applied AI — wherever analytical thinking and an understanding of how real organisations use data can make a difference. My background bridges the technical and the operational, and I'm looking for work where that combination is genuinely useful.",
+      skillsTitle: "Skills",
+      skillGroups: [
+        {
+          title: "Data & Analysis",
+          items: ["Python", "SQL", "Pandas", "Plotly", "Jupyter"]
+        },
+        {
+          title: "Machine Learning",
+          items: ["scikit-learn", "Keras", "FAISS", "Feature Engineering"]
+        },
+        {
+          title: "AI & LLM",
+          items: ["LangChain", "OpenAI API", "RAG", "Prompt Engineering"]
+        },
+        {
+          title: "Tools",
+          items: ["Streamlit", "Git", "Dashboards", "ABAP"]
+        }
+      ],
+      interestsTitle: "Interests",
+      interests: [
+        "Financial markets & trading systems",
+        "Predictive modelling & ML applications",
+        "Decision-support tools & dashboards",
+        "Applied AI in real-world workflows"
+      ]
     },
     projectsPage: {
       eyebrow: "Projects",
@@ -365,15 +392,42 @@ export const copy = {
     },
     aboutPage: {
       eyebrow: "O mně",
-      title: "Praktická cesta do analytiky a aplikované AI.",
-      description:
-        "Toto portfolio vzniká kolem kariérní změny: učím se tvorbou, prohlubuji technické dovednosti na projektech a soustředím se na práci, která přináší z dat srozumitelnost.",
+      title: "Enterprise zázemí. Teď fokus na analytiku a AI.",
       backgroundTitle: "Zázemí",
       backgroundBody:
-        "Můj přechod do datové analytiky a aplikované AI stojí na zvídavosti, struktuře a silném důrazu na užitečný výstup. Baví mě rozkládat složitá témata, organizovat nepřehledné informace a stavět workflow, která vedou k jasnému a praktickému výsledku.",
-      buildingTitle: "Na čem pracuji",
-      buildingBody:
-        "Rozvíjím projekty napříč tržní analytikou, prediktivním modelováním a AI asistovanými nástroji. Společným jmenovatelem je podpora rozhodování: pomoci převést surové informace na lepší porozumění a lepší akci."
+        "Strávila jsem více než 10 let v enterprise IT — v Accenture, Škoda Auto, CETIN a dalších firmách — prací v SAP prostředích, kde byla kvalita dat a spolehlivost systémů kritická pro business. Tahle zkušenost mě naučila fungovat ve složitých technických prostředích, kde záleží na přesnosti a kde se chyby reálně dotýkají lidí.",
+      shiftTitle: "Posun",
+      shiftBody:
+        "Právě zájem o finanční trhy mě přivedl naplno k datům a AI. Chtěla jsem stavět systémy, které analyzují a predikují — ne jen udržovat provoz. Po absolvování Data Science Bootcampu v Coding Bootcamp Praha jsem postavila konkrétní projekty: ML klasifikační model pro cílení bankovních klientů, nasazený jako živý Streamlit dashboard, a dva event-driven trading boty v Pythonu napojené na Interactive Brokers API. O své práci píšu i na Medium, protože umět vysvětlit, co člověk postavil, je stejně důležité jako to skutečně postavit.",
+      lookingTitle: "Co hledám",
+      lookingBody:
+        "Jsem otevřená rolím v datové analytice, data science i aplikované AI — všude tam, kde může analytické myšlení a porozumění tomu, jak organizace opravdu pracují s daty, přinést hodnotu. Moje zázemí propojuje technickou i provozní stránku a hledám práci, kde je tahle kombinace skutečně užitečná.",
+      skillsTitle: "Dovednosti",
+      skillGroups: [
+        {
+          title: "Data a analýza",
+          items: ["Python", "SQL", "Pandas", "Plotly", "Jupyter"]
+        },
+        {
+          title: "Machine learning",
+          items: ["scikit-learn", "Keras", "FAISS", "Feature Engineering"]
+        },
+        {
+          title: "AI a LLM",
+          items: ["LangChain", "OpenAI API", "RAG", "Prompt Engineering"]
+        },
+        {
+          title: "Nástroje",
+          items: ["Streamlit", "Git", "Dashboardy", "ABAP"]
+        }
+      ],
+      interestsTitle: "Zájmy",
+      interests: [
+        "Finanční trhy a trading systémy",
+        "Prediktivní modelování a ML aplikace",
+        "Decision-support nástroje a dashboardy",
+        "Aplikovaná AI v reálných workflow"
+      ]
     },
     projectsPage: {
       eyebrow: "Projekty",
