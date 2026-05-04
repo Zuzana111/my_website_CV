@@ -41,15 +41,6 @@ const resumeContent = {
     ],
     experience: [
       {
-        title: "Freelance SAP Consultant | Gavrit Consulting (Remote, project-based)",
-        period: "May 2021 - Nov 2025",
-        bullets: [
-          "Provided SAP Basis and Security support across project-based remote engagements.",
-          "Supported enterprise SAP operations, administration, and technical coordination.",
-          "Contributed to ongoing SAP-related work while later transitioning toward data analytics and applied AI."
-        ]
-      },
-      {
         title: "SAP Consultant, SAP Competence Center / Basis Team - CETIN",
         period: "Oct 2017 - Apr 2021",
         bullets: [
@@ -143,15 +134,6 @@ const resumeContent = {
       { label: "Nástroje", value: "GitHub, Jupyter, Dash" }
     ],
     experience: [
-      {
-        title: "Freelance SAP Consultant | Gavrit Consulting (Remote, project-based)",
-        period: "Kvě 2021 - Lis 2025",
-        bullets: [
-          "Poskytovala SAP Basis a Security podporu v rámci vzdálených projektových spoluprací.",
-          "Podporovala enterprise SAP provoz, administraci a technickou koordinaci.",
-          "Pokračovala v SAP technické práci a postupně zároveň přešla směrem k datové analytice a aplikované AI."
-        ]
-      },
       {
         title: "SAP Consultant, SAP Competence Center / Basis Team - CETIN",
         period: "Říj 2017 - Dub 2021",
