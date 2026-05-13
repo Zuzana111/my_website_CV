@@ -218,6 +218,7 @@ export const copy = {
       socialLinks: [
         { label: "GitHub", href: siteMeta.github },
         { label: "LinkedIn", href: siteMeta.linkedin },
+        { label: "Medium", href: siteMeta.medium },
         { label: "E-mail", href: `mailto:${siteMeta.email}` }
       ]
     },
