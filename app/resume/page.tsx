@@ -41,7 +41,7 @@ const resumeContent = {
     ],
     experience: [
       {
-        title: "Freelance SAP Consultant (Remote, project-based)",
+        title: "Freelance SAP Consultant - Gavrit Solutions (Remote, project-based)",
         period: "May 2021 - Nov 2025",
         bullets: [
           "Provided SAP Basis and Security support across project-based remote engagements.",
@@ -144,7 +144,7 @@ const resumeContent = {
     ],
     experience: [
       {
-        title: "Freelance SAP Consultant (Remote, project-based)",
+        title: "Freelance SAP Consultant - Gavrit Solutions (Remote, project-based)",
         period: "Kvě 2021 - Lis 2025",
         bullets: [
           "Poskytovala SAP Basis a Security podporu v rámci vzdálených projektových spoluprací.",
