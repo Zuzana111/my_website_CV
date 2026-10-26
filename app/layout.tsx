@@ -26,12 +26,14 @@ export const metadata: Metadata = {
     url: siteMeta.url,
     siteName: "Zuzana Labs",
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [{ url: "/portrait-cropped.jpg", width: 384, height: 384, alt: "Portrait of Zuzana" }]
   },
   twitter: {
     card: "summary",
     title: copy[defaultLocale].meta.title,
-    description: copy[defaultLocale].meta.description
+    description: copy[defaultLocale].meta.description,
+    images: ["/portrait-cropped.jpg"]
   }
 };
 

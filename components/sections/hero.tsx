@@ -84,11 +84,11 @@ export function Hero() {
           </div>
           <div className="relative z-10 h-44 w-44 overflow-hidden rounded-full border border-white/90 shadow-[0_14px_40px_rgba(107,79,91,0.14)] sm:h-52 sm:w-52">
             <Image
-              src="/profile-2026.jpeg"
+              src="/portrait-cropped.jpg"
               alt="Portrait of Zuzana"
               fill
               sizes="(max-width: 640px) 176px, 208px"
-              className="object-cover origin-[75%_35%] scale-[2]"
+              className="object-cover"
               priority
             />
           </div>
